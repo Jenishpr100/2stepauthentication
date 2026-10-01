@@ -1,4 +1,4 @@
-# v2.0.0 - Update 1
+# v2.0.0 - Update 1 (9/30/2026)
 - Added a calculator, a notepad.
 - Used images instead of text to generate questions.
 - Made the UI look better and added more variants of colors.
