@@ -1,0 +1,443 @@
+[
+  {
+    "question": "d/dx (x^2)",
+    "latex": "$\\frac{d}{dx}\\left(x^{2}\\right)$",
+    "answer": "2x",
+    "explanation": "Power rule: bring down the exponent.",
+    "image": "q/01.png",
+    "w": 80,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x^3)",
+    "latex": "$\\frac{d}{dx}\\left(x^{3}\\right)$",
+    "answer": "3x^2",
+    "explanation": "Power rule.",
+    "image": "q/02.png",
+    "w": 81,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x^5)",
+    "latex": "$\\frac{d}{dx}\\left(x^{5}\\right)$",
+    "answer": "5x^4",
+    "explanation": "Power rule.",
+    "image": "q/03.png",
+    "w": 80,
+    "h": 48
+  },
+  {
+    "question": "d/dx (7)",
+    "latex": "$\\frac{d}{dx}\\left(7\\right)$",
+    "answer": "0",
+    "explanation": "The derivative of a constant is 0.",
+    "image": "q/04.png",
+    "w": 62,
+    "h": 48
+  },
+  {
+    "question": "d/dx (4x)",
+    "latex": "$\\frac{d}{dx}\\left(4x\\right)$",
+    "answer": "4",
+    "explanation": "Derivative of ax is a.",
+    "image": "q/05.png",
+    "w": 78,
+    "h": 48
+  },
+  {
+    "question": "d/dx (3x^2)",
+    "latex": "$\\frac{d}{dx}\\left(3x^{2}\\right)$",
+    "answer": "6x",
+    "explanation": "Constant multiple and power rule.",
+    "image": "q/06.png",
+    "w": 95,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x^2 + 5x)",
+    "latex": "$\\frac{d}{dx}\\left(x^{2}+5x\\right)$",
+    "answer": "2x+5",
+    "explanation": "Differentiate term by term.",
+    "image": "q/07.png",
+    "w": 143,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x^4 - x)",
+    "latex": "$\\frac{d}{dx}\\left(x^{4}-x\\right)$",
+    "answer": "4x^3-1",
+    "explanation": "Differentiate term by term.",
+    "image": "q/08.png",
+    "w": 128,
+    "h": 48
+  },
+  {
+    "question": "d/dx (sin x)",
+    "latex": "$\\frac{d}{dx}\\left(\\sin x\\right)$",
+    "answer": "cos(x)",
+    "explanation": "Standard derivative.",
+    "image": "q/09.png",
+    "w": 102,
+    "h": 48
+  },
+  {
+    "question": "d/dx (cos x)",
+    "latex": "$\\frac{d}{dx}\\left(\\cos x\\right)$",
+    "answer": "-sin(x)",
+    "explanation": "Standard derivative.",
+    "image": "q/10.png",
+    "w": 101,
+    "h": 48
+  },
+  {
+    "question": "d/dx (e^x)",
+    "latex": "$\\frac{d}{dx}\\left(e^{x}\\right)$",
+    "answer": "e^x",
+    "explanation": "e^x is its own derivative.",
+    "image": "q/11.png",
+    "w": 76,
+    "h": 48
+  },
+  {
+    "question": "d/dx (ln x)",
+    "latex": "$\\frac{d}{dx}\\left(\\ln x\\right)$",
+    "answer": "1/x",
+    "explanation": "Standard derivative.",
+    "image": "q/12.png",
+    "w": 92,
+    "h": 48
+  },
+  {
+    "question": "d/dx (sqrt(x))",
+    "latex": "$\\frac{d}{dx}\\left(\\sqrt{x}\\right)$",
+    "answer": "1/(2sqrt(x))",
+    "explanation": "sqrt(x) = x^(1/2).",
+    "image": "q/13.png",
+    "w": 91,
+    "h": 48
+  },
+  {
+    "question": "d/dx (1/x)",
+    "latex": "$\\frac{d}{dx}\\left(\\frac{1}{x}\\right)$",
+    "answer": "-1/x^2",
+    "explanation": "1/x = x^(-1).",
+    "image": "q/14.png",
+    "w": 70,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x sin x)",
+    "latex": "$\\frac{d}{dx}\\left(x\\sin x\\right)$",
+    "answer": "sin(x)+x cos(x)",
+    "explanation": "Product rule.",
+    "image": "q/15.png",
+    "w": 118,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x^2 e^x)",
+    "latex": "$\\frac{d}{dx}\\left(x^{2}e^{x}\\right)$",
+    "answer": "2x e^x + x^2 e^x",
+    "explanation": "Product rule.",
+    "image": "q/16.png",
+    "w": 108,
+    "h": 48
+  },
+  {
+    "question": "d/dx (x / (x+1))",
+    "latex": "$\\frac{d}{dx}\\left(\\frac{x}{x+1}\\right)$",
+    "answer": "1/(x+1)^2",
+    "explanation": "Quotient rule.",
+    "image": "q/17.png",
+    "w": 103,
+    "h": 49
+  },
+  {
+    "question": "d/dx (1 / (x+1))",
+    "latex": "$\\frac{d}{dx}\\left(\\frac{1}{x+1}\\right)$",
+    "answer": "-1/(x+1)^2",
+    "explanation": "Chain or quotient rule.",
+    "image": "q/18.png",
+    "w": 105,
+    "h": 49
+  },
+  {
+    "question": "d/dx ((x+1) / x)",
+    "latex": "$\\frac{d}{dx}\\left(\\frac{x+1}{x}\\right)$",
+    "answer": "-1/x^2",
+    "explanation": "Rewrite as 1 + 1/x.",
+    "image": "q/19.png",
+    "w": 103,
+    "h": 48
+  },
+  {
+    "question": "d/dx (sin(2x))",
+    "latex": "$\\frac{d}{dx}\\left(\\sin(2x)\\right)$",
+    "answer": "2cos(2x)",
+    "explanation": "Chain rule.",
+    "image": "q/20.png",
+    "w": 140,
+    "h": 48
+  },
+  {
+    "question": "d/dx ((x+1)^3)",
+    "latex": "$\\frac{d}{dx}\\left((x+1)^{3}\\right)$",
+    "answer": "3(x+1)^2",
+    "explanation": "Chain rule.",
+    "image": "q/21.png",
+    "w": 152,
+    "h": 48
+  },
+  {
+    "question": "d/dx (e^(2x))",
+    "latex": "$\\frac{d}{dx}\\left(e^{2x}\\right)$",
+    "answer": "2e^(2x)",
+    "explanation": "Chain rule.",
+    "image": "q/22.png",
+    "w": 89,
+    "h": 48
+  },
+  {
+    "question": "d/dx (cos(x^2))",
+    "latex": "$\\frac{d}{dx}\\left(\\cos\\left(x^{2}\\right)\\right)$",
+    "answer": "-2x sin(x^2)",
+    "explanation": "Chain rule.",
+    "image": "q/23.png",
+    "w": 141,
+    "h": 48
+  },
+  {
+    "question": "d/dx (ln(3x))",
+    "latex": "$\\frac{d}{dx}\\left(\\ln(3x)\\right)$",
+    "answer": "1/x",
+    "explanation": "Chain rule (or ln 3 + ln x).",
+    "image": "q/24.png",
+    "w": 129,
+    "h": 48
+  },
+  {
+    "question": "d/dx ((2x+1)^2)",
+    "latex": "$\\frac{d}{dx}\\left((2x+1)^{2}\\right)$",
+    "answer": "4(2x+1)",
+    "explanation": "Chain rule.",
+    "image": "q/25.png",
+    "w": 166,
+    "h": 48
+  },
+  {
+    "question": "∫ 2x dx",
+    "latex": "$\\int\\, 2x\\,dx$",
+    "answer": "x^2 + C",
+    "explanation": "Reverse power rule. Don't forget + C.",
+    "image": "q/26.png",
+    "w": 93,
+    "h": 73
+  },
+  {
+    "question": "∫ x^2 dx",
+    "latex": "$\\int\\, x^{2}\\,dx$",
+    "answer": "x^3/3 + C",
+    "explanation": "Reverse power rule. Don't forget + C.",
+    "image": "q/27.png",
+    "w": 92,
+    "h": 73
+  },
+  {
+    "question": "∫ 3 dx",
+    "latex": "$\\int\\, 3\\,dx$",
+    "answer": "3x + C",
+    "explanation": "Integral of a constant. Don't forget + C.",
+    "image": "q/28.png",
+    "w": 77,
+    "h": 73
+  },
+  {
+    "question": "∫ (x + 1) dx",
+    "latex": "$\\int\\, (x+1)\\,dx$",
+    "answer": "x^2/2 + x + C",
+    "explanation": "Integrate term by term. Don't forget + C.",
+    "image": "q/29.png",
+    "w": 146,
+    "h": 73
+  },
+  {
+    "question": "∫ x^3 dx",
+    "latex": "$\\int\\, x^{3}\\,dx$",
+    "answer": "x^4/4 + C",
+    "explanation": "Reverse power rule. Don't forget + C.",
+    "image": "q/30.png",
+    "w": 92,
+    "h": 73
+  },
+  {
+    "question": "∫ cos x dx",
+    "latex": "$\\int\\, \\cos x\\,dx$",
+    "answer": "sin(x) + C",
+    "explanation": "Standard integral. Don't forget + C.",
+    "image": "q/31.png",
+    "w": 121,
+    "h": 73
+  },
+  {
+    "question": "∫ sin x dx",
+    "latex": "$\\int\\, \\sin x\\,dx$",
+    "answer": "-cos(x) + C",
+    "explanation": "Standard integral. Don't forget + C.",
+    "image": "q/32.png",
+    "w": 118,
+    "h": 73
+  },
+  {
+    "question": "∫ e^x dx",
+    "latex": "$\\int\\, e^{x}\\,dx$",
+    "answer": "e^x + C",
+    "explanation": "Standard integral. Don't forget + C.",
+    "image": "q/33.png",
+    "w": 91,
+    "h": 73
+  },
+  {
+    "question": "∫ 1/x dx",
+    "latex": "$\\int\\, \\frac{1}{x}\\,dx$",
+    "answer": "ln|x| + C",
+    "explanation": "Standard integral. Don't forget + C.",
+    "image": "q/34.png",
+    "w": 78,
+    "h": 73
+  },
+  {
+    "question": "∫ from 0 to 1 of 2x dx",
+    "latex": "$\\int_{0}^{1} 2x\\,dx$",
+    "answer": "1",
+    "explanation": "x^2 evaluated from 0 to 1.",
+    "image": "q/35.png",
+    "w": 114,
+    "h": 87
+  },
+  {
+    "question": "∫ from 0 to 2 of x dx",
+    "latex": "$\\int_{0}^{2} x\\,dx$",
+    "answer": "2",
+    "explanation": "x^2/2 evaluated from 0 to 2.",
+    "image": "q/36.png",
+    "w": 100,
+    "h": 86
+  },
+  {
+    "question": "∫ from 0 to 1 of 3x^2 dx",
+    "latex": "$\\int_{0}^{1} 3x^{2}\\,dx$",
+    "answer": "1",
+    "explanation": "x^3 evaluated from 0 to 1.",
+    "image": "q/37.png",
+    "w": 127,
+    "h": 87
+  },
+  {
+    "question": "lim x→2 of (x + 3)",
+    "latex": "$\\lim_{x\\to 2}\\,(x+3)$",
+    "answer": "5",
+    "explanation": "Direct substitution.",
+    "image": "q/38.png",
+    "w": 126,
+    "h": 51
+  },
+  {
+    "question": "lim x→0 of (x^2 + 1)",
+    "latex": "$\\lim_{x\\to 0}\\,(x^{2}+1)$",
+    "answer": "1",
+    "explanation": "Direct substitution.",
+    "image": "q/39.png",
+    "w": 153,
+    "h": 53
+  },
+  {
+    "question": "lim x→3 of x^2",
+    "latex": "$\\lim_{x\\to 3}\\,x^{2}$",
+    "answer": "9",
+    "explanation": "Direct substitution.",
+    "image": "q/40.png",
+    "w": 81,
+    "h": 53
+  },
+  {
+    "question": "lim x→0 of sin(x)/x",
+    "latex": "$\\lim_{x\\to 0}\\,\\frac{\\sin x}{x}$",
+    "answer": "1",
+    "explanation": "A standard limit.",
+    "image": "q/41.png",
+    "w": 93,
+    "h": 54
+  },
+  {
+    "question": "lim x→1 of (x^2 - 1)/(x - 1)",
+    "latex": "$\\lim_{x\\to 1}\\,\\frac{x^{2}-1}{x-1}$",
+    "answer": "2",
+    "explanation": "Factor: (x+1)(x-1)/(x-1).",
+    "image": "q/42.png",
+    "w": 110,
+    "h": 57
+  },
+  {
+    "question": "lim x→∞ of 1/x",
+    "latex": "$\\lim_{x\\to \\infty}\\,\\frac{1}{x}$",
+    "answer": "0",
+    "explanation": "1/x shrinks to 0.",
+    "image": "q/43.png",
+    "w": 76,
+    "h": 50
+  },
+  {
+    "question": "∫ 2x cos(x^2) dx",
+    "latex": "$\\int\\, 2x\\cos\\left(x^{2}\\right)\\,dx$",
+    "answer": "sin(x^2) + C",
+    "explanation": "u-substitution: u = x^2. Don't forget + C.",
+    "image": "q/44.png",
+    "w": 183,
+    "h": 73
+  },
+  {
+    "question": "∫ 2x e^(x^2) dx",
+    "latex": "$\\int\\, 2x\\,e^{x^{2}}\\,dx$",
+    "answer": "e^(x^2) + C",
+    "explanation": "u-substitution: u = x^2. Don't forget + C.",
+    "image": "q/45.png",
+    "w": 134,
+    "h": 73
+  },
+  {
+    "question": "∫ 2x (x^2 + 1)^3 dx",
+    "latex": "$\\int\\, 2x\\left(x^{2}+1\\right)^{3}\\,dx$",
+    "answer": "(x^2+1)^4/4 + C",
+    "explanation": "u-substitution: u = x^2 + 1. Don't forget + C.",
+    "image": "q/46.png",
+    "w": 201,
+    "h": 73
+  },
+  {
+    "question": "∫ cos(2x) dx",
+    "latex": "$\\int\\, \\cos(2x)\\,dx$",
+    "answer": "sin(2x)/2 + C",
+    "explanation": "u-substitution: u = 2x. Don't forget + C.",
+    "image": "q/47.png",
+    "w": 152,
+    "h": 73
+  },
+  {
+    "question": "∫ e^(3x) dx",
+    "latex": "$\\int\\, e^{3x}\\,dx$",
+    "answer": "e^(3x)/3 + C",
+    "explanation": "u-substitution: u = 3x. Don't forget + C.",
+    "image": "q/48.png",
+    "w": 101,
+    "h": 73
+  },
+  {
+    "question": "∫ 2x / (x^2 + 1) dx",
+    "latex": "$\\int\\, \\frac{2x}{x^{2}+1}\\,dx$",
+    "answer": "ln(x^2+1) + C",
+    "explanation": "u-substitution: u = x^2 + 1. Don't forget + C.",
+    "image": "q/49.png",
+    "w": 119,
+    "h": 73
+  }
+]
