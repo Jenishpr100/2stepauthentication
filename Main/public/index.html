@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in</title>
+<script src="theme.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="demo-banner" class="banner" role="note" hidden>Standalone demo: no real authentication. Real login and registration require the server version.</div>
+
+<main id="main">
+  <div class="card">
+    <h1 id="title">Log in</h1>
+    <p id="sub" class="sub"></p>
+
+    <section id="view-auth">
+      <form id="auth-form" novalidate>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password">
+        <p id="msg" class="msg" role="alert"></p>
+        <button type="submit" id="submit" class="btn primary block">Log in</button>
+      </form>
+      <p class="center"><button type="button" id="toggle" class="link">Create an account</button></p>
+    </section>
+
+    <section id="view-home" hidden>
+      <p id="welcome" class="big"></p>
+      <p id="note" class="sub"></p>
+      <button type="button" id="logout" class="btn primary block">Log out</button>
+    </section>
+  </div>
+</main>
+
+<div id="modal" class="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h2 id="modal-title">Are you a human?</h2>
+    <form id="human-form" novalidate>
+      <div class="eq">
+        <img id="q-img" alt="" hidden>
+        <p id="q-text" class="big" hidden></p>
+      </div>
+      <label for="answer">Your answer</label>
+      <input id="answer" name="answer" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="answer-hint human-msg">
+      <p id="answer-hint" class="hint">Type like 3x^2, sin(x) or x^3/3 + C. Integrals need + C. Scratch tools are on the right.</p>
+      <p id="human-msg" class="msg" role="alert"></p>
+      <div class="row">
+        <button type="submit" id="verify" class="btn primary">Verify</button>
+        <button type="button" id="cancel" class="btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<nav class="dock" aria-label="Tools">
+  <button type="button" id="theme" class="btn tool" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+  <button type="button" id="tool-calc" class="btn tool" aria-label="Calculator" title="Calculator" aria-expanded="false" aria-controls="panel-calc">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></svg>
+  </button>
+  <button type="button" id="tool-draw" class="btn tool" aria-label="Drawing pad" title="Drawing pad" aria-expanded="false" aria-controls="panel-draw">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+  </button>
+</nav>
+
+<aside id="panel-calc" class="panel" tabindex="-1" aria-label="Calculator" hidden>
+  <div class="panel-head">
+    <h2>Calculator</h2>
+    <button type="button" class="btn close" data-close="calc" aria-label="Close calculator">&times;</button>
+  </div>
+  <div class="calc-screen">
+    <div id="calc-expr" class="calc-expr" aria-hidden="true">&nbsp;</div>
+    <output id="calc-display" class="calc-display" aria-live="polite">0</output>
+  </div>
+  <div id="calc-grid" class="calc-grid">
+    <button type="button" class="btn span2" data-k="C" aria-label="Clear">C</button>
+    <button type="button" class="btn" data-k="B" aria-label="Backspace">&#9003;</button>
+    <button type="button" class="btn op" data-k="/" aria-label="Divide">&divide;</button>
+    <button type="button" class="btn" data-k="7">7</button>
+    <button type="button" class="btn" data-k="8">8</button>
+    <button type="button" class="btn" data-k="9">9</button>
+    <button type="button" class="btn op" data-k="*" aria-label="Multiply">&times;</button>
+    <button type="button" class="btn" data-k="4">4</button>
+    <button type="button" class="btn" data-k="5">5</button>
+    <button type="button" class="btn" data-k="6">6</button>
+    <button type="button" class="btn op" data-k="-" aria-label="Minus">&minus;</button>
+    <button type="button" class="btn" data-k="1">1</button>
+    <button type="button" class="btn" data-k="2">2</button>
+    <button type="button" class="btn" data-k="3">3</button>
+    <button type="button" class="btn op" data-k="+" aria-label="Plus">+</button>
+    <button type="button" class="btn span2" data-k="0">0</button>
+    <button type="button" class="btn" data-k=".">.</button>
+    <button type="button" class="btn primary" data-k="=" aria-label="Equals">=</button>
+  </div>
+</aside>
+
+<aside id="panel-draw" class="panel wide" tabindex="-1" aria-label="Drawing pad" hidden>
+  <div class="panel-head">
+    <h2>Drawing pad</h2>
+    <button type="button" class="btn close" data-close="draw" aria-label="Close drawing pad">&times;</button>
+  </div>
+  <canvas id="pad" class="pad" width="720" height="440" role="img" aria-label="Scratch pad for drawing"></canvas>
+  <div class="draw-bar">
+    <button type="button" id="pen" class="btn" aria-pressed="true">Pen</button>
+    <button type="button" id="eraser" class="btn" aria-pressed="false">Eraser</button>
+    <button type="button" id="clear" class="btn">Clear</button>
+    <input id="size" type="range" min="1" max="14" value="3" aria-label="Brush size">
+  </div>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>
